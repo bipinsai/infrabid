@@ -1,0 +1,84 @@
+.bid-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+    border: 1px solid #D2D2D2;
+    background: #FFFFFF;
+    border-radius: 0px;
+    position: relative;
+    /* Add this to enable absolute positioning of the tender ID */
+
+    .tender-id-label {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 10px 12px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #757575;
+        text-transform: uppercase;
+        background: #F5F5F5;
+    }
+
+    .tender-id-value {
+        color: #033F59; /* Set only the tender ID value color to red */
+    }
+
+    .bid-closing {
+        text-align: center;
+        background: #eaeff5;
+        padding: 16px;
+
+        .bid-label {
+            color: #6c757d;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .bid-date {
+            color: #e35b3c;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .bid-time {
+            color: #033F59;
+            font-weight: 600;
+            font-size: 12px;
+        }
+    }
+
+    .bid-details {
+        flex: 1;
+
+        .bid-title {
+            text-align: left;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        hr {
+            margin: 8px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+
+        .bid-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: #101010;
+            text-align: left;
+
+            span {
+                font-weight: 500;
+                color: #757575;
+                display: block;
+                font-size: 14px;
+            }
+        }
+    }
+}

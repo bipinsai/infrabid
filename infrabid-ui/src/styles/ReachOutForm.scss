@@ -1,0 +1,86 @@
+/* Reach Out Section */
+.reach-out-to-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+
+    /* About Text Styling */
+    .reach-out-text {
+        text-transform: uppercase;
+        // flex: 1;
+        max-width: 600px;
+        margin-right: 20px;
+        font-weight: 600;
+        font-size: 48px;
+        color: #033F59;
+    }
+
+    /* Contact Form Styling */
+    .reach-out-form {
+        flex: 1;
+        background-color: #E3E5E7;
+        padding: 30px;
+        max-width: 416px;
+        height: 400px;
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 8px;
+
+            label {
+                display: block;
+                font-size: medium;
+                text-align: left;
+                color: #757575;
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                font-weight: 500;
+                font-size: 14px;
+                border: 1px solid #D2D2D2;
+                background-color: #FFFFFF;
+            }
+
+            textarea {
+                height: 120px;
+                resize: vertical;
+            }
+        }
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .home-section .content h1 {
+        font-size: 3rem;
+    }
+
+    .reach-out-to-us {
+        flex-direction: column;
+        /* Stack content vertically on smaller screens */
+        gap: 20px;
+    }
+
+    .reach-out-text h2 {
+        font-size: 2rem;
+    }
+
+    .reach-out-form h3 {
+        font-size: 1.8rem;
+    }
+}
