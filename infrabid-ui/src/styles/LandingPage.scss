@@ -1,0 +1,115 @@
+/* Global Landing Page */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.home-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+  /* Subtract navbar height */
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  padding-top: 70px;
+  /* Padding to avoid navbar overlap */
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+
+      .highlight {
+        color: red;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      max-width: 600px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #033f59;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .footer-logo img {
+      height: 40px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-btn {
+      background: transparent;
+      color: white;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+
+      &:hover {
+        color: #e04e10;
+      }
+    }
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+.equipment-requirements-section {
+  // padding: 40px 20px;
+  padding: 0px 20px 20px;
+}
+
+.bid-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; // Adjust gap size as needed
+}

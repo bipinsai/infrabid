@@ -1,0 +1,45 @@
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+    .logo img {
+        height: 40px;
+    }
+
+    .navbar-links {
+        display: flex;
+        gap: 20px;
+
+        .nav-btn {
+            background: transparent;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover {
+                color: #e04e10;
+            }
+        }
+    }
+}
+
+// @media (max-width: 768px) {
+//     .navbar {
+//       padding: 10px 15px;
+//     }
+//   }
+
+//   main {
+//     padding-top: 80px;
+//   } 
