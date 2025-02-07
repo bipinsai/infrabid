@@ -1,0 +1,159 @@
+.about-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 235px;
+    /* Fixed margin */
+    padding: 20px;
+}
+
+/* Fixed-width image */
+.image-container {
+    width: 1024px;
+    /* Ensuring the image has a fixed width */
+    height: 640px;
+    background: url('../assets/background.jpg') center/cover no-repeat;
+}
+
+/* Centered about-card */
+.about-card {
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    transform: translateX(-50%);
+    /* Centers the card */
+    width: 644px;
+    height: 526px;
+    padding: 20px;
+    background-color: #E04E10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    .title {
+        font-weight: 600;
+        color: #FFFFFF;
+        font-size: 48px;
+        text-align: left;
+    }
+
+    .description {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+
+    .contact-title {
+        text-align: left;
+        font-size: 32px;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+}
+
+hr {
+    margin: 15px 0;
+    border: 1px;
+    height: 1px;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.contact-info {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .icon-wrapper {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .icon {
+        color: #FFFFFF;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 0px;
+        padding: 10px;
+        width: 36px;
+        /* Background size */
+        height: 36px;
+
+        svg {
+            font-size: 24px;
+            /* Icon size */
+        }
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+    .about-container {
+        margin: 0 150px;
+        /* Adjust margins for medium screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-container {
+        margin: 0;
+        /* Reduce margins for smaller screens */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .image-container {
+        width: 100%;
+        /* Allow image to be responsive */
+        height: 480px;
+    }
+
+    .about-card {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin-top: -50px;
+        left: auto;
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        margin: 0;
+        /* Further reduce margins */
+    }
+
+    .image-container {
+        height: 400px;
+    }
+
+    .about-card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        margin: 0;
+    }
+
+    .image-container {
+        height: 300px;
+    }
+
+    .about-card {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}

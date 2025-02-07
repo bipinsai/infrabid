@@ -1,0 +1,66 @@
+.sign-in-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0px;
+
+  .sign-in-box {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    margin: 10px;
+  }
+}
+
+.sign-in-card {
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+
+  .card-media {
+    width: 100%;
+    height: 360px;
+    filter: grayscale(100%);
+  }
+
+  .card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+  }
+
+  .card-title {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .sign-in-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.sign-in-header {
+  padding: 0px 20px 20px;
+  text-align: start;
+
+  .title {
+    color: #033F59;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 48px;
+  }
+}

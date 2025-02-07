@@ -1,0 +1,125 @@
+  .construction-container {
+    padding: 20px;
+  }
+
+  .construction-need-title-wrapper {
+    text-align: left;
+    margin-bottom: 20px;
+
+    .construction-need-title {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 56px;
+    }
+  }
+
+  .highlight {
+    color: #E04E10;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-wrapper {
+    border: 1px solid #D2D2D2;
+    border-radius: 0px;
+    min-height: 696px;
+    max-width: 640px;
+  }
+
+  @media (min-width: 768px) {
+    .card-wrapper {
+      flex: 1 1 45%;
+    }
+  }
+
+  .card {
+    position: relative;
+  }
+
+  .features {
+    max-width: 566px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .feature-text {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .feature-subtext {
+    font-weight: 500;
+    font-size: 16px;
+    color: #757575
+  }
+
+  .feature-icon {
+    font-weight: 600;
+    color: #E04E10;
+  }
+
+  .card-content {
+    position: relative;
+    padding: 0;
+  }
+
+  .card-image {
+    width: 100%;
+    // height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contract-image {
+    height: 309px;
+    background-image: url("../assets/background.jpg");
+  }
+
+  .equipment-image {
+    background-image: url("../assets/background.jpg");
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+
+    .card-title {
+      background: rgba(255, 255, 255, 0.1);
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 25.86px;
+      border-left: 3px solid #E04E10;
+      padding: 12px 20px;
+    }
+
+    .card-description {
+      margin-top: 10px;
+      margin-bottom: 60px;
+      text-align: left;
+      max-width: 536px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }

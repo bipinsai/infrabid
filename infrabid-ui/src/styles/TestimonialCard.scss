@@ -1,0 +1,73 @@
+.testimonial-card {
+  width: 100%;
+  max-width: 540px;
+  padding: 20px;
+  height: 439px;
+  box-shadow: none;
+  border-radius: 0px;
+  background: linear-gradient(#ECF2F4, #C1D2DA);
+
+  .testimonial-text {
+    width: 100%;
+    // height: 460px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #101010;
+    margin-bottom: 20px;
+    text-align: start;
+    word-wrap: break-word;
+
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .author-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .author-name {
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #E04E10;
+  }
+
+  .author-role {
+    font-weight: 500;
+    font-size: 14px;
+    color: #033F59;
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px;
+
+    .testimonial-text {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    .author-image {
+      width: 90px;
+      height: 90px;
+    }
+
+    .author-name {
+      font-size: 18px;
+    }
+
+    .author-role {
+      font-size: 12px;
+    }
+  }
+}
+
+/* If only one card remains, center it */
+.testimonial-wrapper:has(.testimonial-card:only-child) {
+  justify-content: center;
+}
