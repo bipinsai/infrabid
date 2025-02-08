@@ -1,0 +1,114 @@
+.footer {
+  background-color: #081D26;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  .footer-content {
+    display: flex;
+    margin: 50px 130px;
+    gap: 200px;
+
+    // Adjust the layout for smaller screens
+    @media (max-width: 1024px) {
+      margin: 50px 50px;
+      gap: 100px;
+      flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .footer-logo img {
+      height: 32px;
+      width: 255.18px;
+      margin-bottom: 20px;
+
+      // Adjust logo size for small screens
+      @media (max-width: 768px) {
+        width: 200px;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 100px;
+
+      // Adjust footer-links for smaller screens
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+
+    .footer-btn {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      background: transparent;
+      text-align: left;
+      color: white;
+      font-size: 24px;
+      font-weight: 600;
+      width: 220px;
+
+      // Adjust font size for smaller screens
+      @media (max-width: 768px) {
+        font-size: 20px;
+        width: 100%;
+      }
+    }
+
+    .footer-sub-divisions {
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 20px;
+      color: #FFFFFF;
+      text-align: left;
+    }
+
+    .footer-contact-info {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .footer-icon-wrapper {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .footer-icon {
+        color: #FFFFFF;
+        background: #EC652C;
+        border-radius: 0px;
+        padding: 10px;
+        width: 36px;
+        height: 36px;
+
+        svg {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.footer-copywrite {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #06171E;
+  padding: 10px;
+
+  // Adjust for smaller screens
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

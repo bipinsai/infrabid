@@ -1,0 +1,12 @@
+/* Style for the Accordion component */
+.custom-accordion {
+    border: 1px solid #ccc;  /* Add border around each Accordion */
+    margin-bottom: 10px;       /* Space between Accordions */
+  }
+  
+  /* Style for the AccordionSummary */
+  .custom-accordion-summary {
+    display: flex;
+    justify-content: space-between;
+  }
+  

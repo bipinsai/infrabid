@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Typography, Box } from "@mui/material";
-import "../styles/EquipmentRequirements.scss"; // Import SCSS
+import "../styles/EquipmentRequirements.scss";
 import BidCard from "./shared/bidCard";
 import Button from "./shared/button";
 
-const EquipmentRequirements = ({title, buttonPlaceHolder, data, component}) => {
+const EquipmentTender = ({title, buttonPlaceHolder, data, component}) => {
   return (
     <><Box className="header">
       <Typography variant="h4" className="title">
@@ -21,4 +21,4 @@ const EquipmentRequirements = ({title, buttonPlaceHolder, data, component}) => {
   );
 };
 
-export default EquipmentRequirements;
+export default EquipmentTender;

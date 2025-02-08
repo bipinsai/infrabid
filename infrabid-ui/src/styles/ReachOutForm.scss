@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px;
+    padding: 0px 20px 20px;
     text-align: center;
 
     /* About Text Styling */
@@ -60,7 +60,6 @@
     }
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     .navbar {
         padding: 10px 20px;
@@ -72,7 +71,6 @@
 
     .reach-out-to-us {
         flex-direction: column;
-        /* Stack content vertically on smaller screens */
         gap: 20px;
     }
 

@@ -1,43 +1,47 @@
-// import React, { useEffect } from 'react';
-// import { CircularProgress, Typography } from '@mui/material';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { getUserData } from '../features/userSlice';  // Import getUserData correctly
-
-// const LandingPage = () => {
-//     // Access Redux state
-//     const { user, loading, error } = useSelector((state) => state.user);
-//     const dispatch = useDispatch();
-
-
-//     // Dispatch the getUserData action when the component mounts
-//     useEffect(() => {
-//         dispatch(getUserData());
-//     }, [dispatch]);
-
-//     if (loading) {
-//         return <CircularProgress />;
-//     }
-
-//     if (error) {
-//         return <Typography color="error">{`Error: ${error}`}</Typography>;
-//     }
-
-//     return (
-//         <div>
-//             <Typography variant="h6">Fetched Data:</Typography>
-//             <div>{user.title}</div>
-//         </div>
-//     );
-// };
-
-// export default LandingPage;
-
 import React from "react";
 import "../styles/LandingPage.scss"; // Import SCSS file
 import Button from "./shared/button";
-import ReachOutForm from "./shared/reachOutForm";
-import EquipmentRequirements from "./EquipmentRequirements";
+import ReachOutForm from "./reachOutForm";
+import EquipmentRequirements from "./EquipmentTender";
 import { bidData, tenderData } from "../mocks/mock";
+import SignInSection from "./SignInSection";
+import ConstructionNeeds from "./ConstructionNeeds"
+import Testimonials from "./Testimonials";
+import logo from '../assets/background.jpg'
+import ImageCard from "./ImageCard";
+import Questions from "./Questions";
+import Footer from "./shared/footer";
+
+const testimonials = [
+    {
+        id: 1,
+        text: "I was able to connect with trusted contractors who needed my equipment. The platform’s transparency gave me confidence in every deal.",
+        name: "Deepak Singh",
+        role: "Rental Provider",
+        image: logo
+    },
+    {
+        id: 2,
+        text: "Infrabid made renting equipment so convenient. I was able to focus more on my project and less on logistics.",
+        name: "Manoj Tiwari",
+        role: "Builder",
+        image: logo
+    },
+    {
+        id: 3,
+        text: "Infrabid helped me turn my machinery into an asset. Listing was simple, and I found renters quickly!",
+        name: "Rajesh Kumar",
+        role: "Equipment Owner",
+        image: logo
+    },
+    {
+        id: 4,
+        text: "Infrabid helped me turn my machinery into an asset. Listing was simple, and I found renters quickly!",
+        name: "Rajesh Kumar",
+        role: "Equipment Owner",
+        image: logo
+    }
+];
 
 const LandingPage = () => {
     const handleSubmit = (e) => {
@@ -52,49 +56,38 @@ const LandingPage = () => {
             <div id="home" className="home-section">
                 <div className="overlay"></div>
                 <div className="content">
-                    <h1>
+                    <div className="content-title">
                         CONSTRUCTION SOLUTIONS, <br />
                         <span className="highlight">MADE SIMPLE.</span>
-                    </h1>
-                    <p>
-                        Find the right construction equipment to rent and explore contract
-                        opportunities, all in one platform.
-                    </p>
+                        <div className="content-sub-title">
+                            Find the right construction equipment to rent and explore contract
+                            opportunities, all in one platform.
+                        </div>
+                    </div>
                     <div className="buttons">
                         <Button placeholder={'For Tenders'} customColor={'#E04E10'} width={220} height={58} />
                         <Button placeholder={'For Equipment'} customColor={'#033F59'} width={220} height={58} />
                     </div>
                 </div>
             </div>
+            <ConstructionNeeds />
+            <SignInSection />
+            <div className="equipment-requirements-section">
+                <EquipmentRequirements component={'tender'} title={'RECENT TENDERS'} buttonPlaceHolder={'VIEW / Add tenders'} data={tenderData} />
+            </div>
 
+            <div className="equipment-requirements-section">
+                <EquipmentRequirements component={'equipment'} data={bidData} />
+            </div>
+            <Testimonials testimonials={testimonials} />
+            <ImageCard />
+            <Questions />
             <ReachOutForm
                 title="Reach out to us!"
                 buttonText="Submit"
                 onSubmit={handleSubmit} // Pass the onSubmit handler to the form
             />
-
-            <div className="equipment-requirements-section">
-                <EquipmentRequirements component={'tender'} title={'RECENT TENDERS'} buttonPlaceHolder={'VIEW / Add tenders'} data={tenderData}/>
-            </div>
-
-            <div className="equipment-requirements-section">
-                <EquipmentRequirements component={'equipment'} data={bidData}/>
-            </div>
-
-            {/* Footer */}
-            <footer className="footer">
-                <div className="footer-content">
-                    <div className="footer-logo">
-                        <img src="/path/to/logo.png" alt="Logo" />
-                    </div>
-                    <div className="footer-links">
-                        <button className="footer-btn">Privacy Policy</button>
-                        <button className="footer-btn">Terms of Service</button>
-                        <button className="footer-btn">Contact Us</button>
-                    </div>
-                </div>
-                <p>&copy; 2025 Your Company. All Rights Reserved.</p>
-            </footer>
+            <Footer />
         </div>
     );
 };

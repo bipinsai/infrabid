@@ -1,0 +1,47 @@
+import React from 'react';
+import { IconButton } from '@mui/material';
+import PhoneIcon from '@mui/icons-material/Phone';
+import MailIcon from '@mui/icons-material/Mail';
+import '../../styles/Footer.scss';
+import logo from '../../assets/background.jpg';
+
+const Footer = () => {
+    return (
+        <div>
+            <footer className="footer">
+                <div className="footer-content">
+                    <div className="footer-logo">
+                        <img src={logo} alt="Logo" />
+                    </div>
+                    <div className="footer-links">
+                        <div className="footer-btn">COMPANY <hr />
+                            <div className="footer-sub-divisions">Home</div>
+                            <div className="footer-sub-divisions">Contracts</div>
+                            <div className="footer-sub-divisions">Equipments</div>
+                            <div className="footer-sub-divisions">About Us</div>
+                        </div>
+                        <div className="footer-btn">LEGAL<hr />
+                            <div className="footer-sub-divisions">Privacy Policy</div>
+                            <div className="footer-sub-divisions">Terms of Service</div>
+                        </div>
+                        <div className="footer-btn">CONTACT<hr />
+                            <div className='footer-contact-info'>
+                                <div className='footer-icon-wrapper'><IconButton className="footer-icon">
+                                    <PhoneIcon />
+                                </IconButton>
+                                    <span style={{ fontWeight: '500', fontSize: '20px', color: '#FFFFFF' }}>+91 - 7680993056</span></div>
+                                <div className='footer-icon-wrapper'><IconButton className="footer-icon">
+                                    <MailIcon />
+                                </IconButton>
+                                    <span style={{ fontWeight: '500', fontSize: '20px', color: '#FFFFFF', textTransform: 'lowercase' }}>shreyas@infrabid.in</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div className="footer-copywrite">Copyright @ 2025 INFRABID</div>
+        </div>
+    )
+}
+
+export default Footer
