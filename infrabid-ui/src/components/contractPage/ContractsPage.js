@@ -8,12 +8,15 @@ import '../../styles/ContractsPage.scss'
 import Button from "../shared/button";
 import Testimonials from "../homePage/Testimonials";
 import HireEquipment from "./HireEquipment";
+import ContractImageList from "./ContractImageList";
+import logo from '../../assets/background.jpg';
 
 const ContractsPage = () => {
     return (
         <div className="landing-page">
             <HeadSection componetType={'contractspage'} />
-            <div style={{paddingBottom: '40px'}}>
+            <ContractImageList images={[{ id: 1, 'image': logo, 'title': 'welcome' }, { id: 2, 'image': logo, 'title': 'welcome' }, { id: 3, 'image': logo, 'title': 'welcome' }, { id: 4, 'image': logo, 'title': 'welcome' }, { id: 5, 'image': logo, 'title': 'welcome' }, { id: 6, 'image': logo, 'title': 'welcome' }, { id: 7, 'image': logo, 'title': 'welcome' }, { id: 8, 'image': logo, 'title': 'welcome' }]} />
+            <div style={{ paddingBottom: '40px' }}>
                 <div className="contract-equipment-requirements-section">
                     <EquipmentRequirements component={'contracts-equipment'} title={'LATEST EQUIPMENT REQUIRMENTS'} data={tenderData} />
                 </div>

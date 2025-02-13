@@ -1,0 +1,127 @@
+.contracts-images-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #E3E5E7;
+
+    .contracts-images-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 20px;
+      align-self: flex-start;
+    }
+  
+    .contracts-images-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 20px;
+      width: 100%;
+      position: relative;
+    }
+  
+    .contracts-images-arrow-buttons-container {
+      align-self: flex-end;
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+  
+    .contracts-images-arrow-button {
+      color: white;
+      background: #033F59;
+      // border-radius: 50%;
+      border-radius: 0px;
+      padding: 10px;
+      width: 48px;
+      height: 48px;
+  
+      svg {
+        font-size: 24px;
+      }
+  
+      &:hover {
+        background: #033F59;
+      }
+    }
+  
+    @media (max-width: 1024px) {
+      .contracts-images-title {
+        font-size: 36px;
+      }
+  
+      .testimonial-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .contracts-images-title {
+        font-size: 28px;
+      }
+  
+      .contracts-images-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .contracts-images-arrow-button {
+        position: static;
+        margin: 10px;
+      }
+    }
+  }
+
+  .contracts-images-testimonial-card {
+    width: 100%;
+    max-width: 540px;
+    padding: 20px;
+    height: 439px;
+    box-shadow: none;
+    border-radius: 0px;
+    background: linear-gradient(#ECF2F4, #C1D2DA);
+  
+    .contracts-images-text {
+      width: 100%;
+      font-weight: 600;
+      font-size: 24px;
+      color: #0F4D6B;
+      text-transform: uppercase;
+      text-align: start;
+      word-wrap: break-word;
+  
+    }
+  
+    .contracts-image-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  
+    .contracts-image {
+      width: 280px;
+      height: 240px;
+    }
+  
+    @media (max-width: 768px) {
+    //   padding: 15px;
+  
+      .testimonial-text {
+        font-size: 18px;
+        line-height: 26px;
+      }
+  
+      .author-image {
+        width: 90px;
+        height: 90px;
+      }
+  
+    }
+  }
+  
+  /* If only one card remains, center it */
+  .contracts-images-wrapper:has(.contracts-images-testimonial-card:only-child) {
+    justify-content: center;
+  }
