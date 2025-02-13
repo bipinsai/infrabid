@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import AccordionComponent from './shared/accordion';
 import { Box, Typography } from '@mui/material';
-import '../styles/Questions.scss'
+import AccordionComponent from '../shared/accordion';
+import '../../styles/Questions.scss'
 
 const questionsData = [{
     "question": "What is InfraBid?",

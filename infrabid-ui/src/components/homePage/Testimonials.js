@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { IconButton, Box, Typography } from "@mui/material";
 import { ArrowForward, ArrowBack } from '@mui/icons-material';
-import '../styles/Testimonials.scss';
-import TestimonialCard from "./shared/testimonialCard";
+import '../../styles/Testimonials.scss';
+import TestimonialCard from "../shared/testimonialCard";
 
 const Testimonials = ({ testimonials }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

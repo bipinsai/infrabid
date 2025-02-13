@@ -15,6 +15,7 @@ const ButtonComponent = ({
     lineHeight,
     textColor,
     borderRadius,
+    border,
     ...props
 }) => {
     return (
@@ -24,6 +25,8 @@ const ButtonComponent = ({
             size={size}       // Button size (small, medium, large)
             {...props}        // Spread any other props like onClick, disabled, etc.
             sx={{
+                boxShadow: 'none',
+                border: border || '0px',
                 borderRadius: borderRadius || '0px',  // Custom borderRadius (default to '0px' if not provided)
                 width: width || 'auto',  // Custom width (default to 'auto' if not provided)
                 height: height || 'auto', // Custom height (default to 'auto' if not provided)

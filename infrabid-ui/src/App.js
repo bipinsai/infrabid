@@ -1,24 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
-import LandingPage from './components/LandingPage';
-import ServicesPage from "./components/ServicesPage"; 
+import Layout from "./components/shared/Layout";
 import './styles/App.css';
 import { CssBaseline } from '@mui/material';
+import LandingPage from './components/homePage/LandingPage';
+import EquipmentPage from "./components/equipmentPage/EquipmentPage";
+import AboutUsPage from "./components/aboutPage/AboutUsPage";
+import ContractsPage from "./components/contractPage/ContractsPage";
 
 function App() {
   return (
     <div className="App">
       <CssBaseline />
       <Router>
-            <Layout> {/* Layout wraps all the pages, keeping navbar persistent */}
-                <Routes>
-                    <Route path="/" element={<LandingPage />} />
-                    <Route path="/services" element={<ServicesPage />} />
-                    {/* <Route path="/about" element={<AboutPage />} /> */}
-                </Routes>
-            </Layout>
-        </Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/contracts" element={<ContractsPage />} />
+          <Route path="/equipment" element={<EquipmentPage />} />
+          <Route path="/aboutus" element={<AboutUsPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
