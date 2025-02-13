@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
-import "../styles/ConstructionNeeds.scss";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import Button from "./shared/button";
+import Button from "../shared/button";
+import "../../styles/ConstructionNeeds.scss";
 
 const ConstructionNeeds = () => {
   return (

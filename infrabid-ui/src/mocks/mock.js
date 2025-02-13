@@ -1,3 +1,5 @@
+import logo from '../assets/background.jpg'
+
 export const bidData = [
     {
         title: "Excavators",
@@ -88,3 +90,34 @@ export const tenderData = [
         bidClosingTime: "05:30 PM",
     },
 ]
+
+export const testimonials = [
+    {
+        id: 1,
+        text: "I was able to connect with trusted contractors who needed my equipment. The platform’s transparency gave me confidence in every deal.",
+        name: "Deepak Singh",
+        role: "Rental Provider",
+        image: logo
+    },
+    {
+        id: 2,
+        text: "Infrabid made renting equipment so convenient. I was able to focus more on my project and less on logistics.",
+        name: "Manoj Tiwari",
+        role: "Builder",
+        image: logo
+    },
+    {
+        id: 3,
+        text: "Infrabid helped me turn my machinery into an asset. Listing was simple, and I found renters quickly!",
+        name: "Rajesh Kumar",
+        role: "Equipment Owner",
+        image: logo
+    },
+    {
+        id: 4,
+        text: "Infrabid helped me turn my machinery into an asset. Listing was simple, and I found renters quickly!",
+        name: "Rajesh Kumar",
+        role: "Equipment Owner",
+        image: logo
+    }
+];

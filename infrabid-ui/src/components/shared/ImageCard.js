@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Typography, IconButton } from '@mui/material';
-import '../styles/ImageCard.scss';
+import '../../styles/ImageCard.scss';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 

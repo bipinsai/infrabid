@@ -1,10 +1,10 @@
 /* Navbar Styling */
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    // background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
     ;
     display: flex;
@@ -20,6 +20,10 @@
         display: flex;
         gap: 20px;
 
+        a {
+            text-decoration: none;
+        }
+
         .nav-btn {
             background: transparent;
             color: white;
@@ -27,6 +31,7 @@
             font-size: 16px;
             cursor: pointer;
             transition: 0.3s ease;
+            text-transform: uppercase;
 
             &:hover {
                 color: #e04e10;
@@ -35,11 +40,13 @@
     }
 }
 
-// @media (max-width: 768px) {
-//     .navbar {
-//       padding: 10px 15px;
-//     }
-//   }
+@media (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+  }
 
 //   main {
 //     padding-top: 80px;

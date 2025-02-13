@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, CardContent, CardMedia, Typography, Box } from "@mui/material";
 import { Stack } from "@mui/system";
-import "../styles/SignInSection.scss";
-import Button from "./shared/button";
-import logo from '../assets/background.jpg'
+import "../../styles/SignInSection.scss";
+import Button from "../shared/button";
+import logo from '../../assets/background.jpg'
 
 const SignInCard = ({ title, image, onSignIn }) => {
     return (
