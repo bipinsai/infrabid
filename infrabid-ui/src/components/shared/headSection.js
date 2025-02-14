@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "./button";
 import Layout from "./Layout";
 import '../../styles/ContractsPage.scss'
-import logo from '../../assets/background.jpg'
+import logo from '../../assets/VN20241201_190616.png'
 import logo2 from '../../assets/logo.svg'
 
 const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {

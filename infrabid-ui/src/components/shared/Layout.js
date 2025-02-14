@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom"; // Import Link for routing
 import Button from "./button"; // Assuming Button is a shared component
 import "../../styles/NavBar.scss";
+import logo from '../../assets/logo.png';
 
 const Layout = () => {
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src="/path/to/logo.png" alt="Logo" />
+                <img src={logo} alt="Logo"/>
             </div>
             <div className="navbar-links">
                 <Link to="/" className="nav-btn">Home</Link>
