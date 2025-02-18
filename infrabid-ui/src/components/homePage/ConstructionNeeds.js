@@ -5,72 +5,87 @@ import Button from "../shared/button";
 import "../../styles/ConstructionNeeds.scss";
 
 const ConstructionNeeds = () => {
+  // Separate data for FOR CONTRACTS and FOR EQUIPMENT
+  const constructionData = [
+    {
+      title: "FOR CONTRACTS",
+      description: "Post or bid on construction tenders across India with hassle-free processing.",
+      imageClass: "contract-image",
+      features: [
+        {
+          title: "Seamless Bidding",
+          description: "Receive bids from subcontractors or suppliers instantly, ensuring seamless project execution."
+        },
+        {
+          title: "Nationwide Network",
+          description: "Connect with trusted professionals across India for reliable partnerships."
+        },
+        {
+          title: "Cost-Effective Tenders",
+          description: "Post and bid for tenders at minimal cost, making bidding accessible for all stakeholders."
+        }
+      ]
+    },
+    {
+      title: "FOR EQUIPMENT",
+      description: "Easily rent or list construction machinery to save time and money.",
+      imageClass: "equipment-image",
+      features: [
+        {
+          title: "Easy Rentals & Listings",
+          description: "Rent equipment hassle-free or list idle machinery to generate additional income."
+        },
+        {
+          title: "Diverse Options",
+          description: "Access a wide range of construction machinery tailored to your project needs."
+        },
+        {
+          title: "Save Time & Money",
+          description: "Avoid the middleman and directly connect with equipment providers and customers"
+        }
+      ]
+    }
+  ];
+
   return (
     <div className="construction-container">
       <Box className="construction-need-title-wrapper">
         <Typography 
           variant="h4" 
           className="construction-need-title"
-          style={{ 
-            fontFamily: 'Clash Grotesk Variable', 
-            fontWeight: 600, 
-            fontSize: '40px', 
-            lineHeight: '56px', 
-            letterSpacing: '0%',
-             marginTop: '100px'
-          }}
         >
           ALL YOUR CONSTRUCTION NEEDS <br /> IN <span className="highlight">ONE GO.</span>
         </Typography>
       </Box>
       <Box className="cards-container">
-        {["FOR CONTRACTS", "FOR EQUIPMENT"].map((title, index) => (
+        {constructionData.map((cardData, index) => (
           <Box className="card-wrapper" key={index}>
-            <Card className="card contract" style={{ boxShadow: "none", borderRadius: '0px' }}>
-              <CardContent style={{ padding: '0px' }}>
-                <Box className="card-image contract-image"></Box>
+            <Card className="card" style={{ boxShadow: "none", borderRadius: '0px' }}>
+              <CardContent className="card-content" style={{ padding: '0px' }}>
+                <Box className={`card-image ${cardData.imageClass}`}></Box>
                 <Box className="overlay">
                   <Typography 
                     variant="h6" 
                     className="card-title"
-                    style={{ 
-                      fontFamily: 'Clash Grotesk Variable', 
-                      fontWeight: 600, 
-                      fontSize: '36px', 
-                      lineHeight: '56px', 
-                      letterSpacing: '0%'
-                    }}
                   >
-                    {title}
+                    {cardData.title}
                   </Typography>
                   <Typography className="card-description">
-                    {index === 0
-                      ? "Post or bid on construction tenders across India and hassle-free processing."
-                      : "Easily rent or list construction machinery to save time and money."}
+                    {cardData.description}
                   </Typography>
                   <div>
                     <Button placeholder={'LEARN MORE'} customColor={'#E04E10'} width={200} height={50} />
                   </div>
                 </Box>
                 <div className="features">
-                  {["Seamless Bidding", "Nationwide Network", "Cost-Effective Tenders"].map((feature, i) => (
+                  {cardData.features.map((feature, i) => (
                     <Box className="feature-item" key={i}>
                       <CheckCircleIcon className="feature-icon" style={{ fontSize: '32px' }} />
                       <div className="feature-text">
-                        {feature}
+                        {feature.title}
                         <br /> 
                         <div className="feature-subtext">
-                          {index === 0
-                            ? [
-                                "Receive bids from contractors or suppliers in no time, helping you move forward faster.",
-                                "Connect with verified professionals across India for reliable partnerships.",
-                                "List your tenders for a nominal fee, making the process affordable for everyone."
-                              ][i]
-                            : [
-                                "Rent equipment hassle-free or list your idle machinery to earn extra income.",
-                                "Access a wide range of construction machinery tailored to your project needs.",
-                                "Avoid the middleman and directly connect with equipment owners or renters."
-                              ][i]}
+                          {feature.description}
                         </div>
                       </div>
                     </Box>
@@ -85,5 +100,4 @@ const ConstructionNeeds = () => {
   );
 };
 
-
-export default ConstructionNeeds; 
+export default ConstructionNeeds;
