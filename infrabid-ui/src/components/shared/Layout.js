@@ -19,7 +19,7 @@ const Layout = () => {
                 placeholder="Sign In"
                 customColor="#E04E10"
                 width={120}
-                height={50}
+                height={45}
                 fontWeight={700}
                 className="sign-in-btn"
             />
