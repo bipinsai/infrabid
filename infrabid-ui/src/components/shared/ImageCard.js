@@ -15,16 +15,16 @@ const ImageCard = () => {
                     blending traditional expertise with cutting-edge technology to deliver innovative solutions that exceed expectations.
                 </Typography>
                 <hr />
-                <Typography variant="h6" className="contact-title">Got questions? Reach out to us.</Typography>
+                <Typography variant="h4" className="contact-title">Got questions? Reach out to us.</Typography>
                 <div className='contact-info'>
                     <div className='icon-wrapper'><IconButton className="icon">
                         <PhoneIcon />
                     </IconButton>
-                        <span style={{ fontWeight: '500', fontSize: '20px', color: '#FFFFFF' }}>+91 - 7680993056</span></div>
+                        <span style={{ fontWeight: '500', fontSize: '15px', color: '#FFFFFF' }}>+91 - 7680993056</span></div>
                     <div className='icon-wrapper'><IconButton className="icon">
                         <MailIcon />
                     </IconButton>
-                        <span style={{ fontWeight: '500', fontSize: '20px', color: '#FFFFFF' }}>shreyas@infrabid.in</span></div>
+                        <span style={{ fontWeight: '500', fontSize: '15px', color: '#FFFFFF' }}>shreyas@infrabid.in</span></div>
                 </div>
             </Card>
         </div>

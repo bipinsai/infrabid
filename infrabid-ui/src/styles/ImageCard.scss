@@ -7,26 +7,31 @@
     max-width: 1024px;
     margin: 0 235px;
     /* Fixed margin */
-    padding: 20px;
+    padding: 50px;
 }
 
 /* Fixed-width image */
 .image-container {
-    width: 1024px;
+    
+    width: 900px;
     /* Ensuring the image has a fixed width */
-    height: 640px;
-    background: url('../assets/background.jpg') center/cover no-repeat;
+    margin-left: -230px;
+    height: 600px;
+    background: url('../assets/contracts.png') center/cover no-repeat;
 }
 
 /* Centered about-card */
 .about-card {
     position: absolute;
     bottom: 0;
-    left: 90%;
+    left: 75%;
+    top: 45%;
     transform: translateX(-50%);
+    // transform: translateY(60%);
     /* Centers the card */
-    width: 644px;
-    height: 526px;
+    // top: 250px; 
+    width: 500px;
+    height: 400px;
     padding: 20px;
     background-color: #E04E10;
     display: flex;
@@ -37,20 +42,20 @@
     .title {
         font-weight: 600;
         color: #FFFFFF;
-        font-size: 48px;
+        font-size: 20px;
         text-align: left;
     }
 
     .description {
         text-align: left;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
         color: #FFFFFF;
     }
 
     .contact-title {
         text-align: left;
-        font-size: 32px;
+        font-size: 20px;
         font-weight: 500;
         color: #FFFFFF;
     }

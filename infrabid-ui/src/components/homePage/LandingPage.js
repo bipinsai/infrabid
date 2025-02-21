@@ -32,7 +32,7 @@ const LandingPage = () => {
             <div className="equipment-requirements-section">
                 <EquipmentRequirements component={'equipment'} data={bidData} />
             </div>
-            <Testimonials testimonials={testimonials} />
+            {/* <Testimonials testimonials={testimonials} /> */}
             <ImageCard />
             <Questions />
             <ReachOutForm

@@ -3,7 +3,7 @@ import Button from "./button";
 import Layout from "./Layout";
 import '../../styles/ContractsPage.scss'
 import logo from '../../assets/landing_page.png'
-import logo2 from '../../assets/logo.svg'
+import logo2 from '../../assets/contracts_home.png'
 
 const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
     // State to manage the background image

@@ -5,22 +5,27 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding and borders are included in element's width */
 
   .footer-content {
     display: flex;
-    margin: 50px 130px;
-    gap: 200px;
+    margin: 50px auto; /* Centered horizontally with auto margin */
+    gap: 100px;
+    max-width: 100%; /* Ensure content doesn't exceed the viewport width */
+    width: 100%; /* Take up the full available width */
+    box-sizing: border-box; /* Include padding and borders in the width calculation */
 
-    // Adjust the layout for smaller screens
+    /* Adjust the layout for smaller screens */
     @media (max-width: 1024px) {
-      margin: 50px 50px;
-      gap: 100px;
+      margin: 50px 20px; /* Reduced margin for medium screens */
+      gap: 50px; /* Reduced gap between items */
       flex-direction: column;
     }
 
     @media (max-width: 768px) {
       flex-direction: column;
-      gap: 50px;
+      gap: 30px; /* Further reduced gap for smaller screens */
     }
 
     .footer-logo img {
@@ -28,7 +33,7 @@
       width: 255.18px;
       margin-bottom: 20px;
 
-      // Adjust logo size for small screens
+      /* Adjust logo size for small screens */
       @media (max-width: 768px) {
         width: 200px;
       }
@@ -38,10 +43,10 @@
       display: flex;
       gap: 100px;
 
-      // Adjust footer-links for smaller screens
+      /* Adjust footer-links for smaller screens */
       @media (max-width: 768px) {
         flex-direction: column;
-        gap: 40px;
+        gap: 30px; /* Reduced gap for small screens */
       }
     }
 
@@ -56,7 +61,7 @@
       font-weight: 600;
       width: 220px;
 
-      // Adjust font size for smaller screens
+      /* Adjust font size for smaller screens */
       @media (max-width: 768px) {
         font-size: 20px;
         width: 100%;
@@ -106,7 +111,7 @@
   background-color: #06171E;
   padding: 10px;
 
-  // Adjust for smaller screens
+  /* Adjust for smaller screens */
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 10px 20px;
