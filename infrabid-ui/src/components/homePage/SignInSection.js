@@ -3,7 +3,9 @@ import { Card, CardContent, CardMedia, Typography, Box } from "@mui/material";
 import { Stack } from "@mui/system";
 import "../../styles/SignInSection.scss";
 import Button from "../shared/button";
-import logo from '../../assets/background.jpg'
+import sigin1 from '../../assets/sigin1.png';
+import sigin2 from '../../assets/sigin2.png';
+import sigin3 from '../../assets/sigin3.png';
 
 const SignInCard = ({ title, image, onSignIn }) => {
     return (
@@ -11,7 +13,7 @@ const SignInCard = ({ title, image, onSignIn }) => {
             <CardMedia component="img" image={image} alt={title} className="card-media" />
             <CardContent className="card-content">
                 <Typography variant="h6" className="card-title">{title}</Typography>
-                <Button placeholder={'Sign In'} customColor={'#E04E10'} width={172} height={46} onClick={onSignIn} />
+                <Button placeholder={'Sign In'} customColor={'#E04E10'} width={135} height={35} onClick={onSignIn} />
             </CardContent>
         </Card>
     );
@@ -20,28 +22,28 @@ const SignInCard = ({ title, image, onSignIn }) => {
 const SignInSection = () => {
     const users = [
         {
-            title: "CONTRACTOR/ SUB CONTRACTOR",
-            image: logo,
+            title: "CONTRACTOR / SUB CONTRACTOR",
+            image: sigin1,
             onSignIn: () => console.log("Contractor Sign In")
         },
         {
-            title: "EQUIPMENT OWNER/ CUSTOMER",
-            image: logo,
+            title: "EQUIPMENT PROVIDER / CUSTOMER",
+            image: sigin2,
             onSignIn: () => alert("Equipment Owner Sign In")
         },
         {
-            title: "INDIVIDUAL WORKER",
-            image: logo,
+            title: "DAILY WAGE WORKER",
+            image: sigin3,
             onSignIn: () => alert("Individual Worker Sign In")
         }
     ];
 
     return (
         <div className="sign-in-header">
-            <Typography variant="h4" className="title">
+            <Typography variant="h4" style={{marginLeft : '120px'}} className="title">
                 {'Sign In and Get Started'}
             </Typography>
-            <Typography variant="h6" style={{ fontSize: '18px', fontWeight: '600', lineHeight: '24px' }}>{'Register now for tailored opportunities and real-time customized notifications'}</Typography>
+            <Typography variant="h6" style={{ fontSize: '18px', fontWeight: '600', lineHeight: '24px' ,marginLeft : '120px'}}>{'Register now for tailored opportunities and real-time customized notifications'}</Typography>
             <Stack direction={{ xs: "column", sm: "row" }} spacing={3} justifyContent="center" className="sign-in-section">
                 {users.map((user, index) => (
                     <Box key={index} className="sign-in-box">

@@ -7,9 +7,10 @@ import logo from '../../assets/logo.png';
 const Layout = () => {
     return (
         <nav className="navbar">
-            <div className="logo">
-                <img src={logo} alt="Logo"/>
-            </div>
+<div className="logo">
+    <img src={logo} alt="INFRABID" />
+      <span className="logo-text">INFRABID</span>
+</div>
             <div className="navbar-links">
                 <Link to="/" className="nav-btn">Home</Link>
                 <Link to="/contracts" className="nav-btn">Contracts</Link>
@@ -19,8 +20,8 @@ const Layout = () => {
             <Button
                 placeholder="Sign In"
                 customColor="#E04E10"
-                width={120}
-                height={50}
+                width={100}
+                height={30}
                 fontWeight={700}
                 className="sign-in-btn"
             />
