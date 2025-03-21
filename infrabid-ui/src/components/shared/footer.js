@@ -3,7 +3,7 @@ import { IconButton } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import '../../styles/Footer.scss';
-import logo from '../../assets/background.jpg';
+import frame1 from '../../assets/frame1.png';
 
 const Footer = () => {
     return (
@@ -11,7 +11,7 @@ const Footer = () => {
             <footer className="footer">
                 <div className="footer-content">
                     <div className="footer-logo">
-                        <img src={logo} alt="Logo" />
+                        <img src={frame1} alt="Logo" />
                     </div>
                     <div className="footer-links">
                         <div className="footer-btn">COMPANY <hr />
