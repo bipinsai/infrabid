@@ -4,7 +4,7 @@ import Layout from "./Layout";
 import '../../styles/ContractsPage.scss'
 import logo from '../../assets/landing_page.png'
 import logo2 from '../../assets/contracts_home.png'
-
+import frame1 from '../../assets/frame1.png'
 const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
     // State to manage the background image
     const [backgroundImage, setBackgroundImage] = useState();
@@ -12,8 +12,10 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
     useEffect(() => {
         if (componetType === 'mainpage') {
             setBackgroundImage(logo);
-        } else {
+        } else  if (componetType == 'contractspage') {
             setBackgroundImage(logo2)
+        } else if (componetType == 'aboutuspage') {
+            setBackgroundImage(frame1)
         }
     }, [componetType]);
 
@@ -36,7 +38,7 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
                         <Button placeholder={'For Equipment'} customColor={'#033F59'} width={220} height={58} />
                     </div>
                 </div>
-            </div> :
+            </div> : componetType === 'contractspage' ? 
                 <div className="contracts-wrapper">
                     <div className="contracts-content">
                         <div className="contracts-content-title">RENT THE <span className="contracts-highlight">BEST EQUIPMENT</span> <br />FOR YOUR PROJECT
@@ -50,7 +52,7 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
                             <Button placeholder={'For Equipment'} customColor={'#033F59'} width={220} height={58} border={'1px solid #FFFFFF'}/>
                         </div>
                     </div>
-                </div>}
+                </div> : componetType === 'aboutuspage' ? null : null}
         </div>
     )
 }

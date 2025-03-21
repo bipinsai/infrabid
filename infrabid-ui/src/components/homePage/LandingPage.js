@@ -11,7 +11,6 @@ import HeadSection from "../shared/headSection";
 import "../../styles/LandingPage.scss"; // Import SCSS file
 import Questions from "./Questions";
 
-
 const LandingPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,24 +20,28 @@ const LandingPage = () => {
 
     return (
         <div className="landing-page">
-            {/* Home Section */}
             <HeadSection componetType={'mainpage'} />
             <ConstructionNeeds />
             <SignInSection />
-            <div className="equipment-requirements-section">
-                <EquipmentRequirements component={'tender'} title={'RECENT TENDERS'} buttonPlaceHolder={'VIEW / Add tenders'} data={tenderData} />
+            <div className="equipment-requirements-section" style={{ paddingLeft: '50px' }}>
+                <EquipmentRequirements 
+                    component={'tender'} 
+                    title={'RECENT TENDERS'} 
+                    buttonPlaceHolder={'VIEW / Add tenders'} 
+                    data={tenderData}
+                    buttonStyle={{fontSize: '16px'}} // Add this line to adjust button font size
+                />
             </div>
 
-            <div className="equipment-requirements-section">
+            <div className="equipment-requirements-section" style={{ paddingLeft: '50px' }}>
                 <EquipmentRequirements component={'equipment'} data={bidData} />
             </div>
-            {/* <Testimonials testimonials={testimonials} /> */}
             <ImageCard />
             <Questions />
             <ReachOutForm
                 title="Reach out to us!"
                 buttonText="Submit"
-                onSubmit={handleSubmit} // Pass the onSubmit handler to the form
+                onSubmit={handleSubmit}
             />
             <Footer />
         </div>

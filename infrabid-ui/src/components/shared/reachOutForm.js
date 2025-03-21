@@ -27,8 +27,8 @@ const ReachOutFormComponent = ({ title, buttonText, onSubmit }) => {
                     <Button
                         placeholder={buttonText || 'Submit'}
                         customColor="#E04E10"
-                        width={355}
-                        height={50}
+                        width={300}
+                        height={48}
                         fontWeight={700}
                     />
                 </form>
