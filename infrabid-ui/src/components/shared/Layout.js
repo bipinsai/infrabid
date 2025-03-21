@@ -7,11 +7,11 @@ import logo from '../../assets/frame2.png';
 const Layout = () => {
     return (
         <nav className="navbar">
-<div className="logo">
-    <img src={logo} alt="INFRABID" />
-      <span className="logo-text">INFRABID</span>
-</div>
-            <div className="navbar-links">
+            <div className="logo">
+                <img src={logo} alt="INFRABID" />
+                <span className="logo-text" style={{ marginTop: '7px' }}>INFRABID</span>
+            </div>
+            <div style={{ marginTop: '7px' }} className="navbar-links">
                 <Link to="/" className="nav-btn">Home</Link>
                 <Link to="/contracts" className="nav-btn">Contracts</Link>
                 <Link to="/equipment" className="nav-btn">Equipment</Link>
@@ -26,7 +26,6 @@ const Layout = () => {
                 className="sign-in-btn"
             />
         </nav>
-        // <main>{children}</main>
     );
 };
 
