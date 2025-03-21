@@ -15,7 +15,7 @@ const Layout = () => {
                 <Link to="/" className="nav-btn">Home</Link>
                 <Link to="/contracts" className="nav-btn">Contracts</Link>
                 <Link to="/equipment" className="nav-btn">Equipment</Link>
-                <Link to="/aboutus" className="nav-btn">Aboutus</Link>
+                <Link to="/aboutus" className="nav-btn">About us</Link>
             </div>
             <Button
                 placeholder="Sign In"
