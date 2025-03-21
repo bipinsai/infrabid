@@ -9,7 +9,7 @@ const ConstructionNeeds = () => {
   const constructionData = [
     {
       title: "FOR CONTRACTS",
-      description: "Post or bid on construction tenders across India with hassle-free processing.",
+      description: "Post or  bid on construction tenders across India with hassle-free .",
       imageClass: "contract-image",
       features: [
         {
@@ -74,7 +74,16 @@ const ConstructionNeeds = () => {
                     {cardData.description}
                   </Typography>
                   <div>
-                    <Button placeholder={'LEARN MORE'} customColor={'#E04E10'} width={200} height={50} />
+                    <Button 
+                      placeholder={'LEARN MORE'} 
+                      customColor={'#E04E10'} 
+                      width={200} 
+                      height={50} 
+                      onClick={() => {
+                        const path = cardData.title === "FOR CONTRACTS" ? "/contracts" : "/equipment";
+                        window.location.href = path;
+                      }}
+                    />
                   </div>
                 </Box>
                 <div className="features">

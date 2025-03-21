@@ -8,8 +8,10 @@ const Layout = () => {
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src={logo} alt="INFRABID" />
-                <span className="logo-text" style={{ marginTop: '7px' }}>INFRABID</span>
+                <Link to="/">
+                    <img src={logo} alt="INFRABID" />
+                    <span className="logo-text" style={{ marginTop: '7px' }}>INFRABID</span>
+                </Link>
             </div>
             <div style={{ marginTop: '7px' }} className="navbar-links">
                 <Link to="/" className="nav-btn">Home</Link>

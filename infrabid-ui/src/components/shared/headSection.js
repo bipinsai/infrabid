@@ -39,8 +39,20 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
                             opportunities, all in one platform.
                         </div>
                         <div className="buttons">
-                            <Button placeholder={'For Tenders'} customColor={'#E04E10'} width={220} height={58} />
-                            <Button placeholder={'For Equipment'} customColor={'#033F59'} width={220} height={58} />
+                            <Button 
+                                placeholder={'For Tenders'} 
+                                customColor={'#E04E10'} 
+                                width={220} 
+                                height={58} 
+                                onClick={() => window.location.href = '/contracts'} 
+                            />
+                            <Button 
+                                placeholder={'For Equipment'} 
+                                customColor={'#033F59'} 
+                                width={220} 
+                                height={58} 
+                                onClick={() => window.location.href = '/equipment'} 
+                            />
                         </div>
                     </div>
                 </div>
