@@ -11,7 +11,7 @@
   .footer-content {
     display: flex;
     margin: 50px auto; /* Centered horizontally with auto margin */
-    gap: 100px;
+    gap: 60px;
     max-width: 100%; /* Ensure content doesn't exceed the viewport width */
     width: 100%; /* Take up the full available width */
     box-sizing: border-box; /* Include padding and borders in the width calculation */
@@ -32,10 +32,12 @@
       height: 32px;
       width: 255.18px;
       margin-bottom: 20px;
+      margin-right: 60px; /* Added margin towards right */
 
       /* Adjust logo size for small screens */
       @media (max-width: 768px) {
-        width: 200px;
+      width: 200px;
+      margin-right: 15px; /* Slightly reduced right margin for small screens */
       }
     }
 
@@ -53,13 +55,13 @@
     .footer-btn {
       display: flex;
       flex-direction: column;
-      text-transform: uppercase;
       background: transparent;
       text-align: left;
       color: white;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 600;
       width: 220px;
+      font-family: 'Clash Display Variable', sans-serif; /* Using Clash Display Variable font */
 
       /* Adjust font size for smaller screens */
       @media (max-width: 768px) {
@@ -70,8 +72,8 @@
 
     .footer-sub-divisions {
       margin-top: 15px;
-      font-weight: 400;
-      font-size: 20px;
+      font-weight: 200;
+      font-size: 18px;
       color: #FFFFFF;
       text-align: left;
     }
@@ -93,8 +95,8 @@
         background: #EC652C;
         border-radius: 0px;
         padding: 10px;
-        width: 36px;
-        height: 36px;
+        width: 28px;
+        height: 28px;
 
         svg {
           font-size: 24px;

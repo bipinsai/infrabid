@@ -11,19 +11,23 @@
         text-transform: uppercase;
         // flex: 1;
         max-width: 600px;
-        margin-right: 20px;
+        margin-right: 0px;
         font-weight: 600;
         font-size: 48px;
         color: #033F59;
-    }
+    }   
 
     /* Contact Form Styling */
     .reach-out-form {
         flex: 1;
         background-color: #E3E5E7;
-        padding: 30px;
+        padding: 40px 40px 120px 40px;
         max-width: 416px;
         height: 400px;
+        margin-left: 50px; 
+        align-self: flex-end; /* Positions it to the right side */
+        position: relative;
+        right: 80px; /* Moves the form left from its current position */
 
         h3 {
             font-size: 2rem;
@@ -40,6 +44,7 @@
                 color: #757575;
                 font-weight: 500;
                 font-size: 14px;
+                padding-bottom: 5px;
             }
 
             input,
@@ -53,8 +58,9 @@
             }
 
             textarea {
-                height: 120px;
+                height: 80px;
                 resize: vertical;
+                margin-bottom: 10px;
             }
         }
     }
