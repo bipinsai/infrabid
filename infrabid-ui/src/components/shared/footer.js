@@ -17,7 +17,7 @@ const Footer = () => {
                         <div className="footer-btn">COMPANY <hr />
                             <div className="footer-sub-divisions" onClick={() => window.location.href = '/'} style={{ cursor: 'pointer' }}>Home</div>
                             <div className="footer-sub-divisions" onClick={() => window.location.href = '/contracts'} style={{ cursor: 'pointer' }}>Contracts</div>
-                            <div className="footer-sub-divisions" onClick={() => window.location.href = '/equipment'} style={{ cursor: 'pointer' }}>Equipments</div>
+                            <div className="footer-sub-divisions" onClick={() => window.location.href = '/equipment'} style={{ cursor: 'pointer' }}>Equipment</div>
                             <div className="footer-sub-divisions" onClick={() => window.location.href = '/aboutus'} style={{ cursor: 'pointer' }}>About Us</div>
                         </div>
                         <div className="footer-btn">LEGAL<hr />

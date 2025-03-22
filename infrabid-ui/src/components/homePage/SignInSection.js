@@ -12,7 +12,7 @@ const SignInCard = ({ title, image, onSignIn }) => {
         <Card className="sign-in-card" style={{ borderRadius: '0px', boxShadow: "none" }}>
             <CardMedia component="img" image={image} alt={title} className="card-media" />
             <CardContent className="card-content">
-                <Typography variant="h6" className="card-title">{title}</Typography>
+                <Typography variant="h6" className="card-title" >{title}</Typography>
                 <Button placeholder={'Sign In'} customColor={'#E04E10'} width={135} height={35} onClick={onSignIn} />
             </CardContent>
         </Card>

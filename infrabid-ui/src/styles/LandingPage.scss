@@ -52,6 +52,7 @@
       text-align: left;
       margin: 0;
       line-height: 1.2;
+      margin-left : 75px;
       /* Adjust line spacing */
 
       .highlight {
@@ -65,6 +66,7 @@
       align-items: center;
       width: 100%;
       margin-top: 20px;
+      // margin-left: 40px;
     }
 
     .content-sub-title {
@@ -73,6 +75,7 @@
       max-width: 600px;
       text-align: left;
       margin: 0;
+      margin-left: 75px; /* Added margin-left to match content-title */
     }
     content-sub-title-coming-soon{
       font-weight: 500;

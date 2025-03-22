@@ -105,7 +105,7 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
                 <div className="content" style={{ textAlign: 'center', color: '#000000' }}>
                     <div className="content-sub-title-coming-soon" style={{ marginTop: '20px', fontSize: '30px' ,color: "white" , fontWeight : "bold" , textAlign : "left"}}>
                         We're working hard to bring you something amazing,<br />
-                        Meanwhile for any queries, feel free to reachout to +91 93893 85938 and shreyas@infrabid.in <br />
+                        Meanwhile for any queries, feel free to reachout to +91 93893 85938 or shreyas@infrabid.in <br />
                         Stay tuned!
                     </div>
        
