@@ -26,6 +26,7 @@ const Layout = () => {
                 height={30}
                 fontWeight={700}
                 className="sign-in-btn"
+                onClick={() => window.location.href = "/comingsoon"}
             />
         </nav>
     );

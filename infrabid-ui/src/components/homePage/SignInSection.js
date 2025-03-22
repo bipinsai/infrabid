@@ -24,17 +24,17 @@ const SignInSection = () => {
         {
             title: "CONTRACTOR / SUB CONTRACTOR",
             image: sigin1,
-            onSignIn: () => console.log("Contractor Sign In")
+            onSignIn: () => window.location.href = "/comingsoon"
         },
         {
             title: "EQUIPMENT PROVIDER / CUSTOMER",
             image: sigin2,
-            onSignIn: () => alert("Equipment Owner Sign In")
+            onSignIn: () => window.location.href = "/comingsoon"
         },
         {
             title: "DAILY WAGE WORKER",
             image: sigin3,
-            onSignIn: () => alert("Individual Worker Sign In")
+            onSignIn: () => window.location.href = "/comingsoon"
         }
     ];
 

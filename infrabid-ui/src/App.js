@@ -7,7 +7,7 @@ import LandingPage from './components/homePage/LandingPage';
 import EquipmentPage from "./components/equipmentPage/EquipmentPage";
 import AboutUsPage from "./components/aboutPage/AboutUsPage";
 import ContractsPage from "./components/contractPage/ContractsPage";
-
+import ComingSoonPage from "./components/comingSoonPage/comingSoonPage";
 function App() {
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
           <Route path="/contracts" element={<ContractsPage />} />
           <Route path="/equipment" element={<EquipmentPage />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/comingsoon" element={<ComingSoonPage />} />
         </Routes>
       </Router>
     </div>

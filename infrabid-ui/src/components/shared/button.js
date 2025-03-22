@@ -38,6 +38,7 @@ const ButtonComponent = ({
                 color: textColor || '#fff', // Optional: Adjust text color if custom color is applied
                 ...props.sx // Spread any additional sx props passed in
             }}
+            onClick={() => window.location.href = "/comingsoon"}
         >
             {placeholder} {/* Button label */}
         </Button>

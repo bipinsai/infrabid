@@ -13,8 +13,8 @@ const Contracts = () => {
             Streamline Your Tender <br/> Process Today
           </Typography>
           <Box className="hero-buttons">
-            <ButtonComponent placeholder={'Explore tenders'}  customColor={'#E04E10'} fontSize={14}  width={240} height={58}/>
-            <ButtonComponent placeholder={'Add your tender'}  width={240} height={58} fontSize={14} style={{fontSize: '14px', background: 'linear-gradient(to right bottom, #033F59, #001A26)'}} border={'1px solid #D2D2D2'}/>
+            <ButtonComponent placeholder={'Explore tenders'}  customColor={'#E04E10'} fontSize={14}  width={240} height={58} />
+            <ButtonComponent placeholder={'Add your tender'}  width={240} height={58} fontSize={14} style={{fontSize: '14px', background: 'linear-gradient(to right bottom, #033F59, #001A26)'}} border={'1px solid #D2D2D2'} />
           </Box>
         </Box>
       </Box>

@@ -6,6 +6,7 @@ import logo from '../../assets/landing_page.png';
 import equipments_background from '../../assets/equipments_home.png';
 import contracts_background from '../../assets/contracts_home.png';
 import aboutUs from '../../assets/about_us.png';
+import image from '../../assets/new.jpeg';
 
 const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
     const [backgroundImage, setBackgroundImage] = useState();
@@ -17,6 +18,7 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
             case 'contractspage': return contracts_background;
             case 'equipmentpage': return equipments_background;
             case 'aboutuspage': return aboutUs;
+            case 'comingsoon': return image;
             default: return null;
         }
     }, [componetType]);
@@ -96,6 +98,27 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
                         BUILDING THE,<br />
                         <span className="highlight">FUTURE OF</span> <br />
                         <span className="highlight"> CONSTRUCTION.</span>
+                    </div>
+                </div>
+            )}
+            {componetType === 'comingsoon' && (
+                <div className="content" style={{ textAlign: 'center', color: '#000000' }}>
+                    <div className="content-sub-title-coming-soon" style={{ marginTop: '20px', fontSize: '50px' ,color: "#E04E10" , fontWeight : "bold" , textAlign : "left"}}>
+                        We're working hard to bring you something amazing,<br />
+                    </div>
+                    <div className="content-sub-title-coming-soon-2" style={{ marginTop: '20px', fontSize: '30px' ,color: "white" , fontWeight : "bold" , textAlign : "left"}}>
+                        Meanwhile for any queries, feel free to reachout to +91 93893 85938<br />
+                        Stay tuned!
+                    </div>
+       
+                    <div style={{ marginTop: '30px' }}>
+                        <Button 
+                            placeholder={'Back to Home'} 
+                            customColor={'#E04E10'} 
+                            width={220} 
+                            height={58} 
+                            onClick={() => window.location.href = '/'} 
+                        />
                     </div>
                 </div>
             )}
