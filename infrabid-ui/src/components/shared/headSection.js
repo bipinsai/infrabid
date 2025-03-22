@@ -3,7 +3,8 @@ import Button from "./button";
 import Layout from "./Layout";
 import '../../styles/ContractsPage.scss';
 import logo from '../../assets/landing_page.png';
-import logo2 from '../../assets/contracts_home.png';
+import equipments_background from '../../assets/equipments_home.png';
+import contracts_background from '../../assets/contracts_home.png';
 import aboutUs from '../../assets/about_us.png';
 
 const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
@@ -13,8 +14,8 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
     const memoizedBackgroundImage = useMemo(() => {
         switch (componetType) {
             case 'mainpage': return logo;
-            case 'contractspage': return logo2;
-            case 'equipmentpage': return logo2;
+            case 'contractspage': return contracts_background;
+            case 'equipmentpage': return equipments_background;
             case 'aboutuspage': return aboutUs;
             default: return null;
         }
@@ -54,6 +55,21 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
                                 height={58} 
                                 onClick={() => window.location.href = '/equipment'} 
                             />
+                        </div>
+                    </div>
+                </div>
+            )}
+            {componetType === 'contractspage' && (
+                <div className="contracts-wrapper">
+                    <div className="contracts-content">
+                        <div className="contracts-content-title">CONTRACTS MADE <br /> <span className="contracts-highlight"> SMARTER & FASTER</span> 
+                            <div className="contracts-content-sub-title">
+                                Post, bid and finalize construction tenders with ease - all on one seamless platform.
+                            </div>
+                        </div>
+                        <div className="contracts-buttons">
+                            <Button placeholder={'Explore tenders'} customColor={'#E04E10'} width={220} height={58} fontSize={14} />
+                            <Button placeholder={'Add your tender'} customColor={'#033F59'} width={220} height={58} fontSize={14} border={'1px solid #FFFFFF'} />
                         </div>
                     </div>
                 </div>

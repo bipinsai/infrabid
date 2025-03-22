@@ -2,7 +2,7 @@ import React from "react";
 // import "../styles/ServicesPage.scss"; // You can add your own styles
 import HeadSection from "../shared/headSection";
 import EquipmentRequirements from "../homePage/EquipmentTender";
-import { tenderData, testimonials } from "../../mocks/mock";
+import { bidData, testimonials } from "../../mocks/mock";
 import ReachOutForm from "../shared/reachOutForm";
 import Footer from "../shared/footer";
 import '../../styles/ContractsPage.scss'
@@ -29,11 +29,14 @@ const EquipmentPage = () => {
             // { id: 7, 'image': logo, 'title': 'welcome' }, 
             // { id: 8, 'image': logo, 'title': 'welcome' }
             ]} />
+            {/* <div className="equipment-requirements-section" style={{ paddingLeft: '50px' }}>
+                <EquipmentRequirements component={'equipment'} data={bidData} />
+            </div> */}
         <div style={{ paddingBottom: '40px' }}>
             <div className="contract-equipment-requirements-section">
-                <EquipmentRequirements component={'contracts-equipment'} title={'LATEST EQUIPMENT REQUIRMENTS'} data={tenderData} />
+                <EquipmentRequirements component={'contracts-equipment'} title={'LATEST EQUIPMENT REQUIRMENTS'} data={bidData} />
             </div>
-            <Button placeholder={'LIST / RENT EQUIPMENT'} customColor={'#E04E10'} />
+            <Button placeholder={'VIEW ALL'} customColor={'#E04E10'} />
         </div>
         {/* <Testimonials testimonials={testimonials} /> */}
         <HireEquipment />
