@@ -27,9 +27,10 @@ const LandingPage = () => {
                 <EquipmentRequirements 
                     component={'tender'} 
                     title={'RECENT TENDERS'} 
-                    buttonPlaceHolder={'VIEW / Add tenders'} 
+                    buttonPlaceHolder={'VIEW / ADD tenders'} 
                     data={tenderData}
                     buttonStyle={{fontSize: '16px'}} // Add this line to adjust button font size
+                    onClick={() => window.location.href = "/comingsoon"}
                 />
             </div>
 

@@ -74,7 +74,14 @@
       text-align: left;
       margin: 0;
     }
-
+    content-sub-title-coming-soon {
+      font-weight: 700;
+      color: black;
+    }
+    content-sub-title-coming-soon-2 {
+      font-weight: 500;
+      color: black;
+    }
     .buttons {
       display: flex;
       gap: 20px;
@@ -166,4 +173,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.highlight-coming-soon {
+  color : white;
 }

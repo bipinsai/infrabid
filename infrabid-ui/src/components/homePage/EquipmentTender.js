@@ -24,7 +24,7 @@ const EquipmentTender = ({ title, buttonPlaceHolder, data, component, isContract
             </>
           )
         ) : (
-          <Button placeholder={buttonPlaceHolder || 'LIST / RENT EQUIPMENT'} customColor={'#E04E10'} />
+          <Button placeholder={buttonPlaceHolder || 'LIST / RENT EQUIPMENT'} customColor={'#E04E10'}   onClick={() => window.location.href = "/comingsoon"} />
         )}
     </Box>
       <Container className="equipment-container" style={{ maxWidth: '100%' }}>
