@@ -26,9 +26,9 @@ const HireEquipment = () => {
             Ready to Power Your <br/> Projects?
           </Typography>
           <Box className="hero-buttons">
-            <ButtonComponent placeholder={'View Requirements'}  customColor={'#E04E10'} width={240} height={58}/>
-            <ButtonComponent placeholder={'Hire Equipment'}  width={240} height={58} style={{fontSize: '16px', background: 'linear-gradient(to right bottom, #033F59, #001A26)'}} border={'1px solid #D2D2D2'}/>
-            <ButtonComponent placeholder={'Add Your Equipment'} width={240} height={58} style={{background: 'linear-gradient(to right bottom, #033F59, #001A26)'}} customColor={'#E04E10'} border={'1px solid #D2D2D2'}/>
+            <ButtonComponent placeholder={'View Requirements'}  customColor={'#E04E10'} fontSize={14}  width={240} height={58}/>
+            <ButtonComponent placeholder={'Hire Equipment'}  width={240} height={58} fontSize={14} style={{fontSize: '14px', background: 'linear-gradient(to right bottom, #033F59, #001A26)'}} border={'1px solid #D2D2D2'}/>
+            <ButtonComponent placeholder={'Add Your Equipment'} width={240} height={58} fontSize={14}  style={{background: 'linear-gradient(to right bottom, #033F59, #001A26)'}} customColor={'#E04E10'} border={'1px solid #D2D2D2'}/>
           </Box>
         </Box>
       </Box>

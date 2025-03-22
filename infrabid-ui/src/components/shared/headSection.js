@@ -14,6 +14,7 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
         switch (componetType) {
             case 'mainpage': return logo;
             case 'contractspage': return logo2;
+            case 'equipmentpage': return logo2;
             case 'aboutuspage': return aboutUs;
             default: return null;
         }
@@ -57,7 +58,7 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
                     </div>
                 </div>
             )}
-            {componetType === 'contractspage' && (
+            {componetType === 'equipmentpage' && (
                 <div className="contracts-wrapper">
                     <div className="contracts-content">
                         <div className="contracts-content-title">RENT THE <span className="contracts-highlight">BEST EQUIPMENT</span> <br />FOR YOUR PROJECT
@@ -66,9 +67,9 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
                             </div>
                         </div>
                         <div className="contracts-buttons">
-                            <Button placeholder={'For Tenders'} customColor={'#E04E10'} width={220} height={58} />
-                            <Button placeholder={'For Equipment'} customColor={'#033F59'} width={220} height={58} border={'1px solid #FFFFFF'} />
-                            <Button placeholder={'For Equipment'} customColor={'#033F59'} width={220} height={58} border={'1px solid #FFFFFF'} />
+                            <Button placeholder={'View Requirements'} customColor={'#E04E10'} width={220} height={58} fontSize={14} />
+                            <Button placeholder={'Hire Equipment'} customColor={'#033F59'} width={220} height={58} fontSize={14} border={'1px solid #FFFFFF'} />
+                            <Button placeholder={'Add your Equipment'} customColor={'#033F59'} width={220} height={58} fontSize={14} border={'1px solid #FFFFFF'} />
                         </div>
                     </div>
                 </div>
