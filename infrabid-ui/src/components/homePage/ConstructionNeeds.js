@@ -9,7 +9,7 @@ const ConstructionNeeds = () => {
   const constructionData = [
     {
       title: "FOR CONTRACTS",
-      description: "Post or  bid on construction tenders across India with hassle-free .",
+      description: "Post or  bid on construction tenders across India hassle-free .",
       imageClass: "contract-image",
       features: [
         {
@@ -79,8 +79,9 @@ const ConstructionNeeds = () => {
                       customColor={'#E04E10'} 
                       width={200} 
                       height={50} 
-                      onClick={() => {
+                      onClick = {() => {
                         const path = cardData.title === "FOR CONTRACTS" ? "/contracts" : "/equipment";
+                        console.log(path);
                         window.location.href = path;
                       }}
                     />

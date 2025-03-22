@@ -16,6 +16,7 @@ const ButtonComponent = ({
     textColor,
     borderRadius,
     border,
+    onClick= () => window.location.href = "/comingsoon",
     ...props
 }) => {
     return (
@@ -38,7 +39,7 @@ const ButtonComponent = ({
                 color: textColor || '#fff', // Optional: Adjust text color if custom color is applied
                 ...props.sx // Spread any additional sx props passed in
             }}
-            onClick={() => window.location.href = "/comingsoon"}
+           onClick={onClick} // Button click event
         >
             {placeholder} {/* Button label */}
         </Button>

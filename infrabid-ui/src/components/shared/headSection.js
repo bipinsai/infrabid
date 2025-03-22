@@ -103,11 +103,9 @@ const HeadSection = ({ componetType, HeadText, subText, buttonAlign }) => {
             )}
             {componetType === 'comingsoon' && (
                 <div className="content" style={{ textAlign: 'center', color: '#000000' }}>
-                    <div className="content-sub-title-coming-soon" style={{ marginTop: '20px', fontSize: '50px' ,color: "#E04E10" , fontWeight : "bold" , textAlign : "left"}}>
+                    <div className="content-sub-title-coming-soon" style={{ marginTop: '20px', fontSize: '30px' ,color: "white" , fontWeight : "bold" , textAlign : "left"}}>
                         We're working hard to bring you something amazing,<br />
-                    </div>
-                    <div className="content-sub-title-coming-soon-2" style={{ marginTop: '20px', fontSize: '30px' ,color: "white" , fontWeight : "bold" , textAlign : "left"}}>
-                        Meanwhile for any queries, feel free to reachout to +91 93893 85938<br />
+                        Meanwhile for any queries, feel free to reachout to +91 93893 85938 and shreyas@infrabid.in <br />
                         Stay tuned!
                     </div>
        

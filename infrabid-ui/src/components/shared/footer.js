@@ -17,7 +17,7 @@ const Footer = () => {
                         <div className="footer-btn">COMPANY <hr />
                             <div className="footer-sub-divisions" onClick={() => window.location.href = '/'} style={{ cursor: 'pointer' }}>Home</div>
                             <div className="footer-sub-divisions" onClick={() => window.location.href = '/contracts'} style={{ cursor: 'pointer' }}>Contracts</div>
-                            <div className="footer-sub-divisions" onClick={() => window.location.href = '/equipement'} style={{ cursor: 'pointer' }}>Equipments</div>
+                            <div className="footer-sub-divisions" onClick={() => window.location.href = '/equipment'} style={{ cursor: 'pointer' }}>Equipments</div>
                             <div className="footer-sub-divisions" onClick={() => window.location.href = '/aboutus'} style={{ cursor: 'pointer' }}>About Us</div>
                         </div>
                         <div className="footer-btn">LEGAL<hr />
@@ -29,7 +29,7 @@ const Footer = () => {
                                 <div className='footer-icon-wrapper'><IconButton className="footer-icon">
                                     <PhoneIcon />
                                 </IconButton>
-                                    <span style={{ fontWeight: '500', fontSize: '20px', color: '#FFFFFF' }}>+91 - 7680993056</span></div>
+                                    <span style={{ fontWeight: '500', fontSize: '20px', color: '#FFFFFF' }}>+91 -  9389385938</span></div>
                                 <div className='footer-icon-wrapper'><IconButton className="footer-icon">
                                     <MailIcon />
                                 </IconButton>

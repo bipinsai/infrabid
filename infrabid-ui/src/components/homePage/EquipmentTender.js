@@ -13,7 +13,7 @@ const EquipmentTender = ({ title, buttonPlaceHolder, data, component, isContract
       {component === 'contracts-equipment' ? (
           isContract ? (
             <>
-              <Button placeholder={'EXPLORE TENDERS'} customColor={'#E04E10'} width={240} height={50} fontSize={'smaller'}/>
+              <Button placeholder={'EXPLORE TENDERS'} customColor={'#E04E10'} width={240} height={50} fontSize={'smaller'} />
               <Button placeholder={'ADD YOUR TENDER'} customColor={'#033F59'} width={240} height={50} fontSize={'smaller'}/>
             </>
           ) : (

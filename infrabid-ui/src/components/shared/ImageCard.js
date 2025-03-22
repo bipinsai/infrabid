@@ -20,7 +20,7 @@ const ImageCard = () => {
                     <div className='icon-wrapper'><IconButton className="icon">
                         <PhoneIcon />
                     </IconButton>
-                        <span style={{ fontWeight: '500', fontSize: '15px', color: '#FFFFFF' }}>+91 - 7680993056</span></div>
+                        <span style={{ fontWeight: '500', fontSize: '15px', color: '#FFFFFF' }}>+91 - 93893 85938 </span></div>
                     <div className='icon-wrapper'><IconButton className="icon">
                         <MailIcon />
                     </IconButton>

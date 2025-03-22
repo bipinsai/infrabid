@@ -52,7 +52,7 @@ const EquipmentImageList = ({ images }) => {
               <Box className="contracts-image-wrapper">
                 <img src={image.image} alt={image.title} className="contracts-image" />
               </Box>
-              <ButtonComponent placeholder={'View requirements'} width={168} height={40} fontSize={10} customColor={'#E04E10'}/>
+              <ButtonComponent placeholder={'View equipments'} width={168} height={40} fontSize={10} customColor={'#E04E10'}/>
             </CardContent>
           </Card>
         ))}
