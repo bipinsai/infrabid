@@ -29,7 +29,8 @@ const Footer = () => {
                                 <div className='footer-icon-wrapper'><IconButton className="footer-icon">
                                     <PhoneIcon />
                                 </IconButton>
-                                    <span style={{ fontWeight: '500', fontSize: '20px', color: '#FFFFFF' }}>+91 -  9389385938</span></div>
+                           </div>
+                           <span style={{ fontWeight: '500', fontSize: '20px', color: '#FFFFFF' }}>+91 -  9389385938</span>
                                 <div className='footer-icon-wrapper'><IconButton className="footer-icon">
                                     <MailIcon />
                                 </IconButton>
